@@ -41,7 +41,6 @@ public class home extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         Jkeluar = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -66,44 +65,60 @@ public class home extends javax.swing.JFrame {
         Tabel = new javax.swing.JTable();
         Mobil = new javax.swing.JRadioButton();
         Motor = new javax.swing.JRadioButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("INPUT DATA KENDARAAN");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, -1, -1));
-
+        jLabel2.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 102, 0));
         jLabel2.setText("Nomor Tiket");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, -1));
         getContentPane().add(Jkeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 220, 240, 40));
 
+        jLabel3.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(102, 102, 0));
         jLabel3.setText("Nomor Plat");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
-        getContentPane().add(Tiket, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 240, 40));
+        getContentPane().add(Tiket, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 240, 40));
 
+        jLabel4.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(102, 102, 0));
         jLabel4.setText("Jenis Kendaraan");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
-        getContentPane().add(Plat, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 240, 40));
+        getContentPane().add(Plat, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 240, 40));
 
+        jLabel5.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(102, 102, 0));
         jLabel5.setText("Jam Keluar");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 230, -1, -1));
-        getContentPane().add(Tarif, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, 240, 40));
+        getContentPane().add(Tarif, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 240, 40));
 
+        jLabel6.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(102, 102, 0));
         jLabel6.setText("Tanggal Keluar");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 180, -1, -1));
 
+        jLabel7.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(102, 102, 0));
         jLabel7.setText("Tanggal Masuk");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 80, -1, -1));
         getContentPane().add(Jmasuk, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 120, 240, 40));
 
+        jLabel8.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(102, 102, 0));
         jLabel8.setText("Jam Masuk");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, -1, -1));
 
+        jLabel9.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(102, 102, 0));
         jLabel9.setText("Tarif Harga");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
         getContentPane().add(Tkeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 170, 240, 40));
         getContentPane().add(Tmasuk, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 70, 240, 40));
 
+        Print.setBackground(new java.awt.Color(255, 102, 51));
         Print.setText("Print");
         Print.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,6 +127,7 @@ public class home extends javax.swing.JFrame {
         });
         getContentPane().add(Print, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 290, 100, 40));
 
+        Save.setBackground(new java.awt.Color(255, 102, 51));
         Save.setText("Save");
         Save.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,6 +136,7 @@ public class home extends javax.swing.JFrame {
         });
         getContentPane().add(Save, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 100, 40));
 
+        Delete.setBackground(new java.awt.Color(255, 102, 51));
         Delete.setText("Delete");
         Delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,6 +145,7 @@ public class home extends javax.swing.JFrame {
         });
         getContentPane().add(Delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 100, 40));
 
+        Clear.setBackground(new java.awt.Color(255, 102, 51));
         Clear.setText("Clear");
         Clear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,6 +154,7 @@ public class home extends javax.swing.JFrame {
         });
         getContentPane().add(Clear, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, 100, 40));
 
+        Refresh.setBackground(new java.awt.Color(255, 102, 51));
         Refresh.setText("Refresh");
         Refresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,6 +163,7 @@ public class home extends javax.swing.JFrame {
         });
         getContentPane().add(Refresh, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, 100, 40));
 
+        Tabel.setBackground(new java.awt.Color(153, 204, 255));
         Tabel.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null},
@@ -172,13 +192,24 @@ public class home extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 790, 200));
 
+        Mobil.setBackground(new java.awt.Color(255, 153, 51));
         buttonGroup1.add(Mobil);
         Mobil.setText("Mobil");
-        getContentPane().add(Mobil, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 170, 100, 40));
+        getContentPane().add(Mobil, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 170, 100, 40));
 
+        Motor.setBackground(new java.awt.Color(255, 153, 51));
         buttonGroup1.add(Motor);
         Motor.setText("Motor");
-        getContentPane().add(Motor, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 100, 40));
+        getContentPane().add(Motor, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 100, 40));
+
+        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
+
+        jLabel1.setFont(new java.awt.Font("Tekton Pro Ext", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel1.setText("INPUT DATA KENDARAAN");
+        jPanel1.add(jLabel1);
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 560));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -350,6 +381,7 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 

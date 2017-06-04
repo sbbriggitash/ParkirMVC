@@ -45,44 +45,64 @@ public class login extends javax.swing.JFrame {
         Exit = new javax.swing.JButton();
         SignUp = new javax.swing.JButton();
         SignIn = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 204, 204));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Goudy Stout", 1, 12)); // NOI18N
         jLabel1.setText("LOGIN");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 10, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Euphemia", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 153, 0));
         jLabel2.setText("Username");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
 
+        jLabel3.setFont(new java.awt.Font("Euphemia", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 153, 0));
         jLabel3.setText("Password");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
         getContentPane().add(Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 180, 40));
         getContentPane().add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 180, 40));
 
+        Exit.setBackground(new java.awt.Color(204, 255, 153));
+        Exit.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        Exit.setForeground(new java.awt.Color(0, 102, 0));
         Exit.setText("Exit");
         Exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ExitActionPerformed(evt);
             }
         });
-        getContentPane().add(Exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 100, 40));
+        getContentPane().add(Exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 90, 30));
 
+        SignUp.setBackground(new java.awt.Color(204, 255, 153));
+        SignUp.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        SignUp.setForeground(new java.awt.Color(0, 102, 0));
         SignUp.setText("Sign Up");
         SignUp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SignUpActionPerformed(evt);
             }
         });
-        getContentPane().add(SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 100, 40));
+        getContentPane().add(SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 90, 30));
 
+        SignIn.setBackground(new java.awt.Color(204, 255, 153));
+        SignIn.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        SignIn.setForeground(new java.awt.Color(0, 102, 0));
         SignIn.setText("Sign In");
         SignIn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SignInActionPerformed(evt);
             }
         });
-        getContentPane().add(SignIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 100, 40));
+        getContentPane().add(SignIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 90, 30));
+
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.LINE_AXIS));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -180,5 +200,6 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
